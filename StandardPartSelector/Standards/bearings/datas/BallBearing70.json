@@ -1,0 +1,21 @@
+{
+  "_parametres": {"type": "Billes contact oblique 70xx α=15°", "fcstd": "BallBearing7.FCStd"},
+  "_legende": {"bore_dia": "Ø inter", "outer_dia": "Ø extér", "total_width": "Largeur", "ball_count": "Nb billes", "ball_dia": "Ø billes", "contact_angle": "Angle de contact (°)", "bore_radius": "congé bague inter", "shaft_radius": "congé bague exter"},
+  "7003": {"bore_dia"     : 10, "outer_dia"    :  26, "total_width"  :  8, "ball_count"   :  9, "ball_dia"     :  4.5, "contact_angle": 15, "bore_radius"  : 0.3, "shaft_radius" : 0.3},
+  "7004": {"bore_dia"     : 12, "outer_dia"    :  28, "total_width"  :  8, "ball_count"   : 10, "ball_dia"     :  4.5, "contact_angle": 15, "bore_radius"  : 0.3, "shaft_radius" : 0.3},
+  "7005": {"bore_dia"     : 15, "outer_dia"    :  32, "total_width"  :  9, "ball_count"   : 10, "ball_dia"     :    5, "contact_angle": 15, "bore_radius"  : 0.3, "shaft_radius" : 0.3},
+  "7006": {"bore_dia"     : 17, "outer_dia"    :  35, "total_width"  : 10, "ball_count"   : 11, "ball_dia"     :  5.5, "contact_angle": 15, "bore_radius"  : 0.3, "shaft_radius" : 0.3},
+  "7007": {"bore_dia"     : 20, "outer_dia"    :  42, "total_width"  : 12, "ball_count"   : 11, "ball_dia"     :  6.5, "contact_angle": 15, "bore_radius"  : 0.6, "shaft_radius" : 0.6},
+  "7008": {"bore_dia"     : 25, "outer_dia"    :  47, "total_width"  : 12, "ball_count"   : 12, "ball_dia"     :  6.5, "contact_angle": 15, "bore_radius"  : 0.6, "shaft_radius" : 0.6},
+  "7009": {"bore_dia"     : 30, "outer_dia"    :  55, "total_width"  : 13, "ball_count"   : 13, "ball_dia"     :  7.5, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7010": {"bore_dia"     : 35, "outer_dia"    :  62, "total_width"  : 14, "ball_count"   : 13, "ball_dia"     :  8.5, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7011": {"bore_dia"     : 40, "outer_dia"    :  68, "total_width"  : 15, "ball_count"   : 14, "ball_dia"     :    9, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7012": {"bore_dia"     : 45, "outer_dia"    :  75, "total_width"  : 16, "ball_count"   : 14, "ball_dia"     :  9.5, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7013": {"bore_dia"     : 50, "outer_dia"    :  80, "total_width"  : 16, "ball_count"   : 16, "ball_dia"     :  9.5, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7014": {"bore_dia"     : 55, "outer_dia"    :  90, "total_width"  : 18, "ball_count"   : 15, "ball_dia"     :   11, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7015": {"bore_dia"     : 60, "outer_dia"    :  95, "total_width"  : 18, "ball_count"   : 16, "ball_dia"     :   11, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7016": {"bore_dia"     : 65, "outer_dia"    : 100, "total_width"  : 18, "ball_count"   : 17, "ball_dia"     :   11, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7017": {"bore_dia"     : 70, "outer_dia"    : 110, "total_width"  : 20, "ball_count"   : 16, "ball_dia"     :   13, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7018": {"bore_dia"     : 75, "outer_dia"    : 115, "total_width"  : 20, "ball_count"   : 17, "ball_dia"     :   13, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1},
+  "7019": {"bore_dia"     : 80, "outer_dia"    : 125, "total_width"  : 22, "ball_count"   : 16, "ball_dia"     : 14.5, "contact_angle": 15, "bore_radius"  :   1, "shaft_radius" :   1}
+}

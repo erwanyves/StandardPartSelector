@@ -1,0 +1,223 @@
+{
+  "_description": "Catalogue Aimants néodyme",
+  "_version": "1.0",
+  "_excluded_keys": [
+    "fcstd",
+    "force_N",
+    "hauteur",
+    "largeur",
+    "longueur",
+    "nombre_trous"
+  ],
+  "Disque": {
+    "Standard": {
+      "fcstd": "Disque_Standard.FCStd",
+      "json": "Disque_Standard.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false
+        ],
+        [
+          "diametre",
+          "diametre",
+          false
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          false
+        ],
+        [
+          "force_N",
+          "force_N",
+          false
+        ]
+      ]
+    },
+    "Autocollant": {
+      "fcstd": "Disque_Standard.FCStd",
+      "json": "Disque_Autocollant.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false
+        ],
+        [
+          "diametre",
+          "diametre",
+          false
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          false
+        ],
+        [
+          "force_N",
+          "force_N",
+          false
+        ]
+      ]
+    },
+    "A visser": {
+      "fcstd": "Disque à visser.FCStd",
+      "json": "Disque_A_visser.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false
+        ],
+        [
+          "diametre",
+          "diametre",
+          false
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          false
+        ],
+        [
+          "force_N",
+          "force_N",
+          true
+        ]
+      ]
+    }
+  },
+  "Cylindre": {
+    "Standard": {
+      "fcstd": "Disque_Standard.FCStd",
+      "json": "cylindre.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false
+        ],
+        [
+          "diametre",
+          "diametre",
+          false
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          false
+        ],
+        [
+          "force_N",
+          "force_N",
+          false
+        ]
+      ]
+    }
+  },
+  "Cube": {
+    "Standard": {
+      "fcstd": "Cube.FCStd",
+      "json": "Cube_Standard.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false
+        ],
+        [
+          "dimension",
+          "dimension",
+          false
+        ],
+        [
+          "force_N",
+          "force_N",
+          true
+        ]
+      ]
+    }
+  },
+  "parallélépipede": {
+    "standard": {
+      "fcstd": "parallelepipede.FCStd",
+      "json": "parallélépipede_standard.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true
+        ],
+        [
+          "longueur",
+          "longueur",
+          false,
+          true
+        ],
+        [
+          "largeur",
+          "largeur",
+          false,
+          true
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          false,
+          true
+        ],
+        [
+          "force_N",
+          "force_N",
+          true,
+          true
+        ]
+      ]
+    },
+    "à visser": {
+      "fcstd": "parallelepipede à visser.FCStd",
+      "json": "parallélépipede_à_visser.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true
+        ],
+        [
+          "longueur",
+          "longueur",
+          true,
+          true
+        ],
+        [
+          "largeur",
+          "largeur",
+          true,
+          true
+        ],
+        [
+          "hauteur",
+          "hauteur",
+          true,
+          true
+        ],
+        [
+          "nombre_trous",
+          "nombre_trous",
+          true,
+          true
+        ],
+        [
+          "force_N",
+          "force_N",
+          true,
+          true
+        ]
+      ]
+    }
+  }
+}

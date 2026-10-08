@@ -1,0 +1,70 @@
+{
+  "Pointe": {
+    "Tête plate": {
+      "fcstd": "Pointe_Tete_Plate.FCStd",
+      "json": "Pointe_Tête_plate.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true,
+          true
+        ],
+        [
+          "D tige",
+          "DClou",
+          false,
+          true,
+          true
+        ],
+        [
+          "Longueur",
+          "LClou",
+          false,
+          true,
+          true
+        ],
+        [
+          "Diamètre tête",
+          "Dtete",
+          false,
+          true,
+          true
+        ],
+        [
+          "Hauteur tête",
+          "HTete",
+          false,
+          true,
+          true
+        ],
+        [
+          "Angle pointe",
+          "AnglePointe",
+          false,
+          true,
+          true
+        ],
+        [
+          "type",
+          "type",
+          true,
+          false,
+          false
+        ],
+        [
+          "Matiere",
+          "Matiere",
+          true,
+          false,
+          false
+        ]
+      ]
+    }
+  },
+  "_excluded_keys": [
+    "Matiere",
+    "type"
+  ]
+}

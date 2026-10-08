@@ -1,0 +1,241 @@
+{
+  "Circlips Arbre DIN 471": {
+    "petit (<= 9 mm)": {
+      "fcstd": "CirclipArbre_small.FCStd",
+      "json": "CirclipArbre_DIN471_small.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø arbre",
+          "d1",
+          true,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø gorge arbre",
+          "d2",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Epaisseur",
+          "h0",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Encombrement",
+          "d4",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ouverture (jeu entre oreilles) a l'etat libre (mm)",
+          "a",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Largeur radiale du corps de l'anneau (mm) — diametre exterieur corps = d3 + 2*b",
+          "b",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Largeur d'un bec (tenon) d'oreille (mm)",
+          "d5",
+          false,
+          true,
+          "",
+          false
+        ]
+      ]
+    },
+    "standard (> 9 mm)": {
+      "fcstd": "CirclipArbre_standard.FCStd",
+      "json": "CirclipArbre_DIN471_standard.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true
+        ],
+        [
+          "Ø arbre",
+          "d1",
+          true,
+          true
+        ],
+        [
+          "Ø gorge arbre",
+          "d2",
+          false,
+          true
+        ],
+        [
+          "Epaisseur",
+          "h0",
+          false,
+          true
+        ],
+        [
+          "Ø Encombrement",
+          "d4",
+          false,
+          true
+        ],
+        [
+          "largeur coté oreilles",
+          "a",
+          false,
+          true
+        ],
+        [
+          "Largeur opposée oreilles",
+          "b",
+          false,
+          true
+        ],
+        [
+          "Ø trous",
+          "d5",
+          false,
+          true
+        ]
+      ]
+    }
+  },
+  "Circlips Alésage DIN 472": {
+    "standard": {
+      "fcstd": "CirclipAlesage.FCStd",
+      "json": "CirclipAlesage_DIN472.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø alésage",
+          "d1",
+          true,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø gorge",
+          "d2",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Épaisseur",
+          "h0",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø Encombrement",
+          "d4",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Jeu entre oreilles",
+          "a",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "largeur gorge",
+          "b",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Ø trous  oreilles",
+          "d5",
+          false,
+          true,
+          "",
+          false
+        ]
+      ]
+    }
+  },
+  "Anneaux Arbre Type ME (ANSI)": {
+    "standard": {
+      "fcstd": "CirclipArbre_ME.FCStd",
+      "json": "CirclipArbre_ME.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true
+        ],
+        [
+          "Ø arbre",
+          "d1",
+          true,
+          true
+        ],
+        [
+          "Ø gorge",
+          "Dg",
+          false,
+          true
+        ],
+        [
+          "Ø exter",
+          "L2",
+          false,
+          true
+        ],
+        [
+          "Epaisseur",
+          "T0",
+          false,
+          true
+        ]
+      ]
+    }
+  },
+  "_excluded_keys": [
+    "d1"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "_description": "Catalogue Profilés",
+  "_version": "1.0",
+  "Profilés aluminium": {
+    "20x20": {
+      "fcstd": "Profilé 20x20.FCStd",
+      "json": "Profilé 20x20.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "longueur",
+          "longueur",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "Angle",
+          "Angle",
+          false,
+          true,
+          "",
+          false
+        ],
+        [
+          "cas d'usage",
+          "cas d'usage",
+          true,
+          true,
+          "text",
+          true
+        ]
+      ]
+    },
+    "40x40": {
+      "fcstd": "Profilé 40x40.FCStd",
+      "json": "profile 40x40.json",
+      "columns": [
+        [
+          "Reference",
+          "ref",
+          false,
+          true
+        ],
+        [
+          "longueur",
+          "longueur",
+          false,
+          true
+        ],
+        [
+          "Angle",
+          "angle",
+          false,
+          true
+        ]
+      ]
+    }
+  },
+  "_excluded_keys": [
+    "cas d'usage"
+  ]
+}

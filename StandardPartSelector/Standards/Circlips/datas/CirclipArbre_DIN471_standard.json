@@ -1,0 +1,21 @@
+{
+  "_parametres": {"type": "Circlips Arbre DIN 471 standard (> 9 mm)", "fcstd": "CirclipArbre_standard.FCStd"},
+  "_legende": {"d1": "Ø arbre", "d2": "Ø gorge arbre", "h0": "Epaisseur", "d4": "Ø Encombrement", "a": "largeur coté oreilles", "b": "Largeur opposée oreilles", "d5": "Ø trous"},
+  "Circlip Arbre \u00d810": {"d1": 10, "d2":  9.3, "h0":    1, "d4": 13.2, "a" :  3.5, "b" : 1.9, "d5": 1.2},
+  "Circlip Arbre \u00d812": {"d1": 12, "d2":   11, "h0":    1, "d4": 15.1, "a" :    4, "b" : 2.1, "d5": 1.2},
+  "Circlip Arbre \u00d815": {"d1": 15, "d2": 13.8, "h0":    1, "d4": 18.2, "a" :  4.8, "b" : 2.4, "d5": 1.5},
+  "Circlip Arbre \u00d817": {"d1": 17, "d2": 15.7, "h0":    1, "d4": 20.5, "a" :  5.2, "b" : 2.6, "d5": 1.5},
+  "Circlip Arbre \u00d820": {"d1": 20, "d2": 18.5, "h0":  1.2, "d4": 23.8, "a" :  5.7, "b" : 2.9, "d5": 1.5},
+  "Circlip Arbre \u00d825": {"d1": 25, "d2": 23.2, "h0":  1.2, "d4": 29.6, "a" :  6.5, "b" : 3.3, "d5": 1.5},
+  "Circlip Arbre \u00d830": {"d1": 30, "d2": 27.9, "h0":  1.5, "d4": 35.2, "a" :  7.3, "b" : 3.8, "d5":   2},
+  "Circlip Arbre \u00d835": {"d1": 35, "d2": 32.2, "h0":  1.5, "d4": 40.5, "a" :    8, "b" : 4.2, "d5":   2},
+  "Circlip Arbre \u00d840": {"d1": 40, "d2": 36.5, "h0": 1.75, "d4":   46, "a" :  8.8, "b" : 4.7, "d5":   2},
+  "Circlip Arbre \u00d845": {"d1": 45, "d2": 41.5, "h0": 1.75, "d4": 51.5, "a" :  9.5, "b" :   5, "d5": 2.5},
+  "Circlip Arbre \u00d850": {"d1": 50, "d2": 45.8, "h0":    2, "d4": 57.5, "a" : 10.2, "b" : 5.5, "d5": 2.5},
+  "Circlip Arbre \u00d855": {"d1": 55, "d2": 50.8, "h0":    2, "d4":   63, "a" :   11, "b" : 5.8, "d5": 2.5},
+  "Circlip Arbre \u00d860": {"d1": 60, "d2":   55, "h0":    2, "d4": 68.5, "a" : 11.8, "b" : 6.2, "d5": 2.5},
+  "Circlip Arbre \u00d865": {"d1": 65, "d2":   60, "h0": 2.35, "d4": 73.5, "a" : 12.5, "b" : 6.5, "d5": 2.5},
+  "Circlip Arbre \u00d870": {"d1": 70, "d2": 64.5, "h0": 2.35, "d4": 79.5, "a" : 13.2, "b" : 6.9, "d5": 2.5},
+  "Circlip Arbre \u00d875": {"d1": 75, "d2": 69.5, "h0": 2.35, "d4": 84.5, "a" :   14, "b" : 7.3, "d5":   3},
+  "Circlip Arbre \u00d880": {"d1": 80, "d2": 74.5, "h0": 2.35, "d4":   90, "a" : 14.8, "b" : 7.7, "d5":   3}
+}

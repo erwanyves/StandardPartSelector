@@ -1,0 +1,16 @@
+{
+  "_parametres": {"type": "Cube Standard", "fcstd": "Cube.FCStd"},
+  "_legende": {"dimension": "dimension", "force_N": "force_N"},
+  "W-01-N"    : {"dimension":  1, "force_N"  : 0.37},
+  "W-03-N"    : {"dimension":  3, "force_N"  :  2.9},
+  "W-04-N"    : {"dimension":  4, "force_N"  :    5},
+  "W-05-G"    : {"dimension":  5, "force_N"  :   11},
+  "W-05-N"    : {"dimension":  5, "force_N"  :   11},
+  "W-05-N50-G": {"dimension":  5, "force_N"  :   12},
+  "W-05-N50-N": {"dimension":  5, "force_N"  :   12},
+  "W-06-N"    : {"dimension":  6, "force_N"  :   13},
+  "W-07-K"    : {"dimension":  7, "force_N"  :   16},
+  "W-07-N"    : {"dimension":  7, "force_N"  :   16},
+  "W-10-N"    : {"dimension": 10, "force_N"  :   38},
+  "W-12-N"    : {"dimension": 12, "force_N"  :   63}
+}

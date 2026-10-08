@@ -1,0 +1,40 @@
+{
+  "_version": 2,
+  "fcstd": {
+    "BallBearing6.FCStd": {
+      "sc_timestamp": "20260518-082827",
+      "hash": "171b9ce9cd0f2f8e7f909b540000d5357c1873aa",
+      "mtime": 1780646918.0048187
+    },
+    "BallBearing7.FCStd": {
+      "sc_timestamp": "20260519-001818",
+      "hash": "cf47fed3d13bf56d8138f84db565e046f8a1b3cc",
+      "mtime": 1780647840.8736813
+    },
+    "RollerBearingN.FCStd": {
+      "sc_timestamp": "20260612-170215",
+      "hash": "788233133ecc3e1d22b70448c5a5f888c2c4e89b",
+      "mtime": 1781276537.0578582
+    },
+    "RollerBearingNF.FCStd": {
+      "sc_timestamp": "20260612-170217",
+      "hash": "299df17ef36ed6c4cd5d0ecf45ed2ddafcb08992",
+      "mtime": 1781276539.729655
+    },
+    "RollerBearingNJ.FCStd": {
+      "sc_timestamp": "20260612-170220",
+      "hash": "fcad4a94088fd8bdf3e70ff1ab2cb1026d6d9bf8",
+      "mtime": 1781276542.5949047
+    },
+    "RollerBearingNU.FCStd": {
+      "sc_timestamp": "20260518-214244",
+      "hash": "1632805cabdbd32ecdc7a84cd98cfbe41cdd4621",
+      "mtime": 1780647793.8667378
+    },
+    "TaperedRollerBearing.FCStd": {
+      "sc_timestamp": "20260518-162515",
+      "hash": "299b6e7d6d3f92ecc9f4a60b2d1d896955913091",
+      "mtime": 1780649029.0360684
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "en": {
+    "components": {
+      "bearings": "Bearings"
+    },
+    "families": {
+      "Billes contact oblique": "Angular contact ball bearings",
+      "Billes rainurées": "Deep groove ball bearings",
+      "Rouleaux N": "Cylindrical rollers N",
+      "Rouleaux NF": "Cylindrical rollers NF",
+      "Rouleaux NJ": "Cylindrical rollers NJ",
+      "Rouleaux NU": "Cylindrical rollers NU",
+      "Rouleaux coniques": "Tapered roller bearings"
+    },
+    "variants": {
+      "2xx légère": "2xx light",
+      "302xx légère": "302xx light",
+      "303xx moyenne": "303xx medium",
+      "320xx compacte": "320xx compact",
+      "322xx moyenne-large": "322xx medium-heavy",
+      "323xx lourde": "323xx heavy",
+      "331xx large": "331xx wide",
+      "332xx extra-large": "332xx extra-wide",
+      "3xx moyenne": "3xx medium",
+      "4xx lourde": "4xx heavy"
+    }
+  },
+  "fr": {
+    "components": {
+      "bearings": "Roulements"
+    },
+    "families": {
+      "Billes contact oblique": "Billes contact oblique",
+      "Billes rainurées": "Billes rainurées",
+      "Rouleaux N": "Rouleaux N",
+      "Rouleaux NF": "Rouleaux NF",
+      "Rouleaux NJ": "Rouleaux NJ",
+      "Rouleaux NU": "Rouleaux NU",
+      "Rouleaux coniques": "Rouleaux coniques"
+    },
+    "variants": {
+      "2xx légère": "2xx légère",
+      "302xx légère": "302xx légère",
+      "303xx moyenne": "303xx moyenne",
+      "320xx compacte": "320xx compacte",
+      "322xx moyenne-large": "322xx moyenne-large",
+      "323xx lourde": "323xx lourde",
+      "331xx large": "331xx large",
+      "332xx extra-large": "332xx extra-large",
+      "3xx moyenne": "3xx moyenne",
+      "4xx lourde": "4xx lourde"
+    }
+  },
+  "de": {
+    "components": {
+      "bearings": "Wälzlager"
+    },
+    "families": {
+      "Billes contact oblique": "Schrägkugellager",
+      "Billes rainurées": "Rillenkugellager",
+      "Rouleaux N": "Zylinderrollenlager N",
+      "Rouleaux NF": "Zylinderrollenlager NF",
+      "Rouleaux NJ": "Zylinderrollenlager NJ",
+      "Rouleaux NU": "Zylinderrollenlager NU",
+      "Rouleaux coniques": "Kegelrollenlager"
+    },
+    "variants": {
+      "2xx légère": "2xx leicht",
+      "302xx légère": "302xx leicht",
+      "303xx moyenne": "303xx mittel",
+      "320xx compacte": "320xx kompakt",
+      "322xx moyenne-large": "322xx mittel-schwer",
+      "323xx lourde": "323xx schwer",
+      "331xx large": "331xx breit",
+      "332xx extra-large": "332xx extra-breit",
+      "3xx moyenne": "3xx mittel",
+      "4xx lourde": "4xx schwer"
+    }
+  },
+  "es": {
+    "components": {
+      "bearings": "Rodamientos"
+    },
+    "families": {
+      "Billes contact oblique": "Rodamientos de bolas de contacto angular",
+      "Billes rainurées": "Rodamientos rígidos de bolas",
+      "Rouleaux N": "Rodamientos de rodillos cilíndricos N",
+      "Rouleaux NF": "Rodamientos de rodillos cilíndricos NF",
+      "Rouleaux NJ": "Rodamientos de rodillos cilíndricos NJ",
+      "Rouleaux NU": "Rodamientos de rodillos cilíndricos NU",
+      "Rouleaux coniques": "Rodamientos de rodillos cónicos"
+    },
+    "variants": {
+      "2xx légère": "2xx ligera",
+      "302xx légère": "302xx ligera",
+      "303xx moyenne": "303xx media",
+      "320xx compacte": "320xx compacta",
+      "322xx moyenne-large": "322xx media-pesada",
+      "323xx lourde": "323xx pesada",
+      "331xx large": "331xx ancha",
+      "332xx extra-large": "332xx extra-ancha",
+      "3xx moyenne": "3xx media",
+      "4xx lourde": "4xx pesada"
+    }
+  },
+  "it": {
+    "components": {
+      "bearings": "Cuscinetti"
+    },
+    "families": {
+      "Billes contact oblique": "Cuscinetti a sfere a contatto obliquo",
+      "Billes rainurées": "Cuscinetti a sfere a gola profonda",
+      "Rouleaux N": "Cuscinetti a rulli cilindrici N",
+      "Rouleaux NF": "Cuscinetti a rulli cilindrici NF",
+      "Rouleaux NJ": "Cuscinetti a rulli cilindrici NJ",
+      "Rouleaux NU": "Cuscinetti a rulli cilindrici NU",
+      "Rouleaux coniques": "Cuscinetti a rulli conici"
+    },
+    "variants": {
+      "2xx légère": "2xx leggera",
+      "302xx légère": "302xx leggera",
+      "303xx moyenne": "303xx media",
+      "320xx compacte": "320xx compatta",
+      "322xx moyenne-large": "322xx media-pesante",
+      "323xx lourde": "323xx pesante",
+      "331xx large": "331xx larga",
+      "332xx extra-large": "332xx extra-larga",
+      "3xx moyenne": "3xx media",
+      "4xx lourde": "4xx pesante"
+    }
+  }
+}

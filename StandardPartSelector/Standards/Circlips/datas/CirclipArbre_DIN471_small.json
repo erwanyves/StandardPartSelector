@@ -1,0 +1,11 @@
+{
+  "_parametres": {"type": "Circlips Arbre DIN 471 petit (<= 9 mm)", "fcstd": "CirclipArbre_small.FCStd"},
+  "_legende": {"d1": "Ø arbre", "d2": "Ø gorge arbre", "h0": "Epaisseur", "d4": "Encombrement", "a": "Ouverture (jeu entre oreilles) a l'etat libre (mm)", "b": "Largeur radiale du corps de l'anneau (mm) — diametre exterieur corps = d3 + 2*b", "d5": "Largeur d'un bec (tenon) d'oreille (mm)"},
+  "Circlip Arbre \u00d83": {"d1": 3, "d2": 2.7, "h0": 0.4, "d4": 5.5, "a" : 1.7, "b" : 0.9, "d5": 0.6},
+  "Circlip Arbre \u00d84": {"d1": 4, "d2": 3.7, "h0": 0.4, "d4": 6.6, "a" :   2, "b" :   1, "d5": 0.8},
+  "Circlip Arbre \u00d85": {"d1": 5, "d2": 4.7, "h0": 0.6, "d4": 7.4, "a" : 2.2, "b" : 1.1, "d5": 0.8},
+  "Circlip Arbre \u00d86": {"d1": 6, "d2": 5.6, "h0": 0.7, "d4": 8.6, "a" : 2.4, "b" : 1.3, "d5":   1},
+  "Circlip Arbre \u00d87": {"d1": 7, "d2": 6.5, "h0": 0.8, "d4": 9.8, "a" : 2.7, "b" : 1.4, "d5":   1},
+  "Circlip Arbre \u00d88": {"d1": 8, "d2": 7.4, "h0": 0.8, "d4":  11, "a" : 2.9, "b" : 1.6, "d5":   1},
+  "Circlip Arbre \u00d89": {"d1": 9, "d2": 8.4, "h0":   1, "d4":  12, "a" : 3.2, "b" : 1.7, "d5": 1.2}
+}

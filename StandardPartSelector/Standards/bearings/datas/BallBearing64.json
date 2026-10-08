@@ -1,0 +1,17 @@
+{
+  "_parametres": {"type": "Billes rainurées 64xx", "fcstd": "BallBearing6.FCStd"},
+  "_legende": {"bore_dia": "Ø inter", "outer_dia": "Ø exter", "total_width": "Largeur", "ball_count": "Nb billes", "ball_dia": "Ø billes", "bore_radius": "congé bague inter", "shaft_radius": "congé bague exter"},
+  "6404": {"bore_dia"    : 20, "outer_dia"   :  54, "total_width" : 14, "ball_count"  :  9, "ball_dia"    :    9, "bore_radius" : 0.6, "shaft_radius": 0.6},
+  "6405": {"bore_dia"    : 25, "outer_dia"   :  62, "total_width" : 17, "ball_count"  : 10, "ball_dia"    :   10, "bore_radius" : 0.6, "shaft_radius": 0.6},
+  "6406": {"bore_dia"    : 30, "outer_dia"   :  72, "total_width" : 19, "ball_count"  : 10, "ball_dia"    : 11.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6407": {"bore_dia"    : 35, "outer_dia"   :  80, "total_width" : 21, "ball_count"  : 10, "ball_dia"    : 12.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6408": {"bore_dia"    : 40, "outer_dia"   :  90, "total_width" : 23, "ball_count"  : 10, "ball_dia"    : 14.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6409": {"bore_dia"    : 45, "outer_dia"   : 100, "total_width" : 25, "ball_count"  : 10, "ball_dia"    :   16, "bore_radius" :   1, "shaft_radius":   1},
+  "6410": {"bore_dia"    : 50, "outer_dia"   : 110, "total_width" : 27, "ball_count"  : 10, "ball_dia"    : 17.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6411": {"bore_dia"    : 55, "outer_dia"   : 120, "total_width" : 29, "ball_count"  : 10, "ball_dia"    :   19, "bore_radius" :   1, "shaft_radius":   1},
+  "6412": {"bore_dia"    : 60, "outer_dia"   : 130, "total_width" : 31, "ball_count"  : 10, "ball_dia"    : 20.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6413": {"bore_dia"    : 65, "outer_dia"   : 140, "total_width" : 33, "ball_count"  : 10, "ball_dia"    :   22, "bore_radius" :   1, "shaft_radius":   1},
+  "6414": {"bore_dia"    : 70, "outer_dia"   : 150, "total_width" : 35, "ball_count"  : 10, "ball_dia"    : 23.5, "bore_radius" :   1, "shaft_radius":   1},
+  "6415": {"bore_dia"    : 75, "outer_dia"   : 160, "total_width" : 37, "ball_count"  : 10, "ball_dia"    :   25, "bore_radius" :   1, "shaft_radius":   1},
+  "6416": {"bore_dia"    : 80, "outer_dia"   : 180, "total_width" : 42, "ball_count"  : 10, "ball_dia"    :   29, "bore_radius" :   1, "shaft_radius":   1}
+}

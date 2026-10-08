@@ -1,0 +1,13 @@
+# StandardPartSelector - language configuration / configuration de langue
+#
+# Leave this file empty (or delete it) for automatic detection:
+# FreeCAD language preference, then system locale, then English
+# fallback if neither is supported.
+# Laisser ce fichier vide (ou le supprimer) pour une detection
+# automatique : preference de langue FreeCAD, puis locale systeme,
+# puis repli sur l'anglais si aucune des deux n'est prise en charge.
+#
+# To force a language: enter its 2-letter code below.
+# Pour forcer une langue : indiquez son code a deux lettres ci-dessous.
+# Codes disponibles / available codes : en, fr, de, es, it
+#

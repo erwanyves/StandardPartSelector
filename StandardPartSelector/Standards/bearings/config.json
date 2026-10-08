@@ -1,0 +1,708 @@
+{
+  "_description": "Configuration des types de roulements pour StandardPartSelector",
+  "_version": "2.0",
+  "Billes rainurées": {
+    "60xx": {
+      "fcstd": "BallBearing6.FCStd",
+      "json": "BallBearing60.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "62xx": {
+      "fcstd": "BallBearing6.FCStd",
+      "json": "BallBearing62.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "63xx": {
+      "fcstd": "BallBearing6.FCStd",
+      "json": "BallBearing63.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "64xx": {
+      "fcstd": "BallBearing6.FCStd",
+      "json": "BallBearing64.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Billes contact oblique": {
+    "70xx α=15°": {
+      "fcstd": "BallBearing7.FCStd",
+      "json": "BallBearing70.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø extér",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "72xx α=15°": {
+      "fcstd": "BallBearing7.FCStd",
+      "json": "BallBearing72.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "73xx α=25°": {
+      "fcstd": "BallBearing7.FCStd",
+      "json": "BallBearing73.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "74xx α=15°": {
+      "fcstd": "BallBearing7.FCStd",
+      "json": "BallBearing74.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Rouleaux N": {
+    "2xx légère": {
+      "fcstd": "RollerBearingN.FCStd",
+      "json": "RollerBearingN2.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "3xx moyenne": {
+      "fcstd": "RollerBearingN.FCStd",
+      "json": "RollerBearingN3.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "4xx lourde": {
+      "fcstd": "RollerBearingN.FCStd",
+      "json": "RollerBearingN4.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Rouleaux NU": {
+    "2xx légère": {
+      "fcstd": "RollerBearingNU.FCStd",
+      "json": "RollerBearingNU2.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "3xx moyenne": {
+      "fcstd": "RollerBearingNU.FCStd",
+      "json": "RollerBearingNU3.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    },
+    "4xx lourde": {
+      "fcstd": "RollerBearingNU.FCStd",
+      "json": "RollerBearingNU4.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Rouleaux NJ": {
+    "2xx légère": {
+      "fcstd": "RollerBearingNJ.FCStd",
+      "json": "RollerBearingNJ2.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    },
+    "3xx moyenne": {
+      "fcstd": "RollerBearingNJ.FCStd",
+      "json": "RollerBearingNJ3.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    },
+    "4xx lourde": {
+      "fcstd": "RollerBearingNJ.FCStd",
+      "json": "RollerBearingNJ4.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Rouleaux NF": {
+    "2xx légère": {
+      "fcstd": "RollerBearingNF.FCStd",
+      "json": "RollerBearingNF2.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    },
+    "3xx moyenne": {
+      "fcstd": "RollerBearingNF.FCStd",
+      "json": "RollerBearingNF3.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    },
+    "4xx lourde": {
+      "fcstd": "RollerBearingNF.FCStd",
+      "json": "RollerBearingNF4.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Diamètre d'alésage (mm)",
+          "bore_dia"
+        ],
+        [
+          "Diamètre extérieur (mm)",
+          "outer_dia"
+        ],
+        [
+          "Largeur totale (mm)",
+          "total_width"
+        ]
+      ]
+    }
+  },
+  "Rouleaux coniques": {
+    "302xx légère": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing302.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ]
+      ]
+    },
+    "303xx moyenne": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing303.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ]
+      ]
+    },
+    "320xx compacte": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing320.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ]
+      ]
+    },
+    "322xx moyenne-large": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing322.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ]
+      ]
+    },
+    "323xx lourde": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing323.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ],
+        [
+          "Diamètre moyen rouleau (mm)",
+          "roller_dia"
+        ]
+      ]
+    },
+    "331xx large": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing331.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ],
+        [
+          "Diamètre moyen rouleau (mm)",
+          "roller_dia"
+        ]
+      ]
+    },
+    "332xx extra-large": {
+      "fcstd": "TaperedRollerBearing.FCStd",
+      "json": "TaperedRollerBearing332.json",
+      "columns": [
+        [
+          "Reference",
+          "ref"
+        ],
+        [
+          "Ø inter",
+          "bore_dia"
+        ],
+        [
+          "Ø exter",
+          "outer_dia"
+        ],
+        [
+          "Largeur",
+          "total_width"
+        ],
+        [
+          "Largeur bague inter",
+          "inner_width"
+        ],
+        [
+          "Largeur bague exter",
+          "outer_width"
+        ],
+        [
+          "Angle de contact (°)",
+          "contact_angle"
+        ]
+      ]
+    }
+  },
+  "_excluded_keys": [
+    "roller_small_dia",
+    "roller_large_dia"
+  ]
+}

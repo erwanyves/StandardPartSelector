@@ -1,0 +1,25 @@
+{
+  "_version": 2,
+  "fcstd": {
+    "CirclipArbre_standard.FCStd": {
+      "sc_timestamp": "20260821-213235",
+      "hash": "1e75c8831d859bbcd574dafed7e6e7f1af972b16",
+      "mtime": 1787340756.1548746
+    },
+    "CirclipAlesage.FCStd": {
+      "sc_timestamp": "20260821-213235",
+      "hash": "476d27eedf3ddc3e6eea46957c6a7cfa44ae5532",
+      "mtime": 1787340755.6669073
+    },
+    "CirclipArbre_ME.FCStd": {
+      "sc_timestamp": "20260821-213235",
+      "hash": "bdce796dd1532565f8d8bc746c46ad07538d60da",
+      "mtime": 1787340755.9173634
+    },
+    "CirclipArbre_small.FCStd": {
+      "sc_timestamp": "20260830-114944",
+      "hash": "5982f5dd4bd2ba0286e9f2a22a400caa37e654b9",
+      "mtime": 1788083384.7490554
+    }
+  }
+}

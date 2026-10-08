@@ -1,0 +1,8 @@
+{
+  "_parametres": {"type": "Profilés aluminium 20x20", "fcstd": "Profilé 20x20.FCStd"},
+  "_legende": {"longueur": "longueur", "Angle": "Angle", "cas d'usage": "cas d'usage"},
+  "profil 20x20 l 100": {"longueur"   : 100, "Angle"      : 0, "cas d'usage": "moteur"},
+  "profil 20x20 l 150": {"longueur"   : 150, "Angle"      : 0, "cas d'usage":       ""},
+  "profil 20x20 l 200": {"longueur"   : 200, "Angle"      : 0, "cas d'usage":       ""},
+  "profil 20x20 l 300": {"longueur"   : 300, "Angle"      : 0, "cas d'usage":  "l=300"}
+}

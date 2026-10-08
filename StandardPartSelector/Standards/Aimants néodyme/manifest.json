@@ -1,0 +1,30 @@
+{
+  "_version": 2,
+  "fcstd": {
+    "Cube.FCStd": {
+      "sc_timestamp": "20260612-170207",
+      "hash": "08468ffe4ba8b0a3114032cacf6325af2d567331",
+      "mtime": 1781276528.0237532
+    },
+    "Disque à visser.FCStd": {
+      "sc_timestamp": "20260612-170208",
+      "hash": "abedd4b9f519e4f7895efb0ee521d7383d30546f",
+      "mtime": 1781276528.3861296
+    },
+    "Disque_Standard.FCStd": {
+      "sc_timestamp": "20260612-170208",
+      "hash": "1188ab36eb586d8a66cf008e6b58baab59c97037",
+      "mtime": 1781276528.817637
+    },
+    "parallelepipede à visser.FCStd": {
+      "sc_timestamp": "20260612-170209",
+      "hash": "de47048e498f0eb688ed5d236604d02af23bc7e9",
+      "mtime": 1781276529.392669
+    },
+    "parallelepipede.FCStd": {
+      "sc_timestamp": "20260612-170209",
+      "hash": "3f51d74ffca2e5ec323ece7cd7dbcee5cc7c4275",
+      "mtime": 1781276529.6252823
+    }
+  }
+}

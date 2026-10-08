@@ -1,0 +1,13 @@
+{
+  "_parametres": {"type": "parallélépipede à visser", "fcstd": "parallelepipede à visser.FCStd"},
+  "_legende": {"longueur": "longueur", "largeur": "largeur", "hauteur": "hauteur", "nombre_trous": "nombre_trous", "force_N": "force_N"},
+  "CS-Q-12-12-04-N": {"longueur"    : 12, "largeur"     : 12, "hauteur"     : 4, "nombre_trous": 1, "force_N"     :  30},
+  "CS-Q-15-15-04-N": {"longueur"    : 15, "largeur"     : 15, "hauteur"     : 4, "nombre_trous": 1, "force_N"     :  40},
+  "CS-Q-20-12-04-N": {"longueur"    : 20, "largeur"     : 12, "hauteur"     : 4, "nombre_trous": 1, "force_N"     :  52},
+  "CS-Q-20-20-04-N": {"longueur"    : 20, "largeur"     : 20, "hauteur"     : 4, "nombre_trous": 1, "force_N"     :  75},
+  "CS-Q-30-12-04-N": {"longueur"    : 30, "largeur"     : 12, "hauteur"     : 4, "nombre_trous": 1, "force_N"     :  68},
+  "CS-Q-40-20-04-N": {"longueur"    : 40, "largeur"     : 20, "hauteur"     : 4, "nombre_trous": 2, "force_N"     : 120},
+  "CS-Q-40-40-04-N": {"longueur"    : 40, "largeur"     : 40, "hauteur"     : 4, "nombre_trous": 2, "force_N"     : 160},
+  "CS-Q-60-20-04-N": {"longueur"    : 60, "largeur"     : 20, "hauteur"     : 4, "nombre_trous": 2, "force_N"     : 130},
+  "CS-Q-80-20-04-N": {"longueur"    : 80, "largeur"     : 20, "hauteur"     : 4, "nombre_trous": 2, "force_N"     : 180}
+}

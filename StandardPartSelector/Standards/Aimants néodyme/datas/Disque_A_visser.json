@@ -1,0 +1,20 @@
+{
+  "_parametres": {"type": "Disque A visser", "fcstd": "Disque à visser.FCStd"},
+  "_legende": {"diametre": "diametre", "hauteur": "hauteur", "force_N": "force_N"},
+  "CS-S-12-04-N" : {"diametre": 12, "hauteur" : 4, "force_N" :  16},
+  "CS-S-12-04-NR": {"diametre": 12, "hauteur" : 4, "force_N" :  16},
+  "CS-S-15-04-N" : {"diametre": 15, "hauteur" : 4, "force_N" :  30},
+  "CS-S-15-04-NR": {"diametre": 15, "hauteur" : 4, "force_N" :  30},
+  "CS-S-18-04-N" : {"diametre": 18, "hauteur" : 4, "force_N" :  40},
+  "CS-S-18-04-NR": {"diametre": 18, "hauteur" : 4, "force_N" :  40},
+  "CS-S-23-04-N" : {"diametre": 23, "hauteur" : 4, "force_N" :  65},
+  "CS-S-23-04-NR": {"diametre": 23, "hauteur" : 4, "force_N" :  65},
+  "CS-S-27-04-N" : {"diametre": 27, "hauteur" : 4, "force_N" :  80},
+  "CS-S-27-04-NR": {"diametre": 27, "hauteur" : 4, "force_N" :  80},
+  "CS-S-34-04-N" : {"diametre": 34, "hauteur" : 4, "force_N" : 100},
+  "CS-S-34-04-NR": {"diametre": 34, "hauteur" : 4, "force_N" : 100},
+  "CS-S-42-04-N" : {"diametre": 42, "hauteur" : 4, "force_N" : 120},
+  "CS-S-42-04-NR": {"diametre": 42, "hauteur" : 4, "force_N" : 120},
+  "CS-S-50-04-N" : {"diametre": 50, "hauteur" : 4, "force_N" : 140},
+  "CS-S-50-04-NR": {"diametre": 50, "hauteur" : 4, "force_N" : 140}
+}

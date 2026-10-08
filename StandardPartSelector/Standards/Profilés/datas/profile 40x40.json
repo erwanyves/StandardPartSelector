@@ -1,0 +1,6 @@
+{
+  "_parametres": {"type": "Profilés aluminium 40x40", "fcstd": "Profilé 40x40.FCStd"},
+  "_legende": {"longueur": "longueur", "angle": "Angle"},
+  "profile 40x40 l 100": {"angle"   : 0, "longueur": 100},
+  "profile 40x40 l 200": {"angle"   : 0, "longueur": 200}
+}
