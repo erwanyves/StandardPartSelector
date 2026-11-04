@@ -9,6 +9,7 @@ from config import MACRO_DIR, _t, _get_qt
 from catalog import discover_components, load_catalog
 from geometry import _highlight
 import documents
+import transaction
 
 # ── Propriétés SC_ de données (Prix, Fournisseur…) ──────────────────────
 # Même groupe que les propriétés SC_ techniques.
@@ -555,12 +556,20 @@ def _handle_sc_selection(sc_info, components, QtWidgets):
             QtWidgets.QMessageBox.Yes
         )
         if reply == QtWidgets.QMessageBox.Yes:
-            _update_sc_varset(obj, varset, catalog_params,
-                              ts_current,
-                              vcfg.get('excluded_keys', set()),
-                              QtWidgets, silent=True)
-            apply_sc_data_properties(obj, catalog.get(ref, {}),
-                                     vcfg.get('data_props', {}))
+            # Écrit dans le document de l'utilisateur : une transaction, comme
+            # les autres gestes (oublié au premier relevé du 04/11, trouvé par
+            # la relecture indépendante). Ouverte APRÈS la question.
+            transaction.ouvrir(_t('transaction_update'))
+            try:
+                _update_sc_varset(obj, varset, catalog_params,
+                                  ts_current,
+                                  vcfg.get('excluded_keys', set()),
+                                  QtWidgets, silent=True)
+                apply_sc_data_properties(obj, catalog.get(ref, {}),
+                                         vcfg.get('data_props', {}))
+                transaction.fermer()
+            finally:
+                transaction.fermer(abandon=True)
         return {'comp_key': comp_key, 'family': family,
                 'variant': variant, 'ref': ref,
                 'obj': obj, 'fcstd': _fcstd}
@@ -597,15 +606,22 @@ def _handle_sc_selection(sc_info, components, QtWidgets):
                     _params = _cat2.get(saved_name)
                     if _params:
                         _cfg2 = {family: {variant: _vcfg2}}
-                        _replace_component(
-                            obj, comp_key, family, variant,
-                            saved_name, _params, _cfg2, QtWidgets)
+                        transaction.ouvrir(_t('transaction_replace'))
+                        try:
+                            _replace_component(
+                                obj, comp_key, family, variant,
+                                saved_name, _params, _cfg2, QtWidgets)
+                            transaction.fermer()
+                        finally:
+                            transaction.fermer(abandon=True)
                         print(_t('success_msg', ref=saved_name))
                     else:
                         _dbg(f'[replace] Référence {saved_name!r} '
                               f'introuvable après sauvegarde')
                 except Exception as _re:
-                    _dbg(f'[replace] Erreur : {_re}')
+                    import traceback as _tb
+                    print(f"[SPS] {_t('error_generation')} : {_re}")
+                    print(_tb.format_exc())
             return None   # Fermer sans ouvrir le sélecteur
         # Non → continuer vers le dialogue de remplacement normal
 

@@ -17,6 +17,7 @@ from datetime import datetime
 from config  import MACRO_DIR, STANDARDS_DIR, _t, _get_qt
 from catalog import load_comp_config
 import documents
+import transaction
 
 # ── Constantes ──────────────────────────────────────────────────────────────
 _INTEGRABLE_TYPES = ('PartDesign::Body', 'App::Part')
@@ -946,9 +947,17 @@ class IntegrationWizard:
 
             # 4. Convertir l'objet original en standard (SC_ properties)
             if fresh_obj is not None:
-                _apply_sc_properties(
-                    fresh_obj,
-                    family_key, self._family, self._variant, self._ref)
+                # Seule écriture dans un document de l'utilisateur : elle se
+                # défait d'un Ctrl+Z (04/11/2026). Le modèle et les JSON de
+                # la bibliothèque sont des fichiers, hors transaction.
+                transaction.ouvrir(_t('transaction_integrate'))
+                try:
+                    _apply_sc_properties(
+                        fresh_obj,
+                        family_key, self._family, self._variant, self._ref)
+                    transaction.fermer()
+                finally:
+                    transaction.fermer(abandon=True)
             else:
                 _dbg(f'[integration] avertissement : objet source introuvable '
                       f'après extraction, SC_ non appliqué')

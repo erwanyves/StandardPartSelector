@@ -321,7 +321,12 @@ def create_component(params: dict, fcstd_path: str, label: str = None,
                                     _expr.replace(
                                         f'<<{_orig}>>',
                                         f'<<{_new_lbl}>>'))
-                            except Exception: pass
+                            except Exception as _ee:
+                                # Muet jusqu'au 04/11/2026 (mémorandum §4) :
+                                # une expression non renommée pointe encore
+                                # vers le VarSet d'un AUTRE composant.
+                                print(f'[SPS] AVERT expression {_oo.Label}.{_path} '
+                                      f'non renommée : {_ee}')
             active_doc.recompute()
             _dbg('[Component] mergeProject OK')
         except Exception as _me:

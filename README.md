@@ -2,11 +2,11 @@
 
 [![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
 [![FreeCAD](https://img.shields.io/badge/FreeCAD-1.0%2B-orange.svg)](https://www.freecad.org)
-[![Version](https://img.shields.io/badge/version-1.0-green.svg)](#version-history)
+[![Version](https://img.shields.io/badge/version-1.1-green.svg)](#version-history)
 
 Insert, replace and manage parametric standard parts (bearings, circlips, profiles, magnets…) in FreeCAD from catalogues you can extend yourself.
 
-**Author:** Yves Guillou · **Version:** 1.0 · **License:** LGPL v2.1
+**Author:** Yves Guillou · **Version:** 1.1 · **License:** LGPL v2.1
 
 ---
 
@@ -34,6 +34,7 @@ The macro also:
 - recognises parts it inserted earlier, so you can replace them with another reference
 - converts a part whose parameters match no reference into a standard part
 - synchronises an optional external library with the local one
+- makes every operation a single undo step: an insertion (orientation adjustments included), a replacement, an update. A failed insertion or replacement leaves nothing in the document
 
 **Library included in this repository:**
 
@@ -222,6 +223,10 @@ The family and reference names of the included library are in French.
 ---
 
 ## Version history
+
+**1.1** (November 2026)
+- One undo step per operation: insertion with its orientation adjustments, replacement, bulk update, update proposed on selection, marking a part as standard. A failed insertion or replacement is rolled back before the error message.
+- Errors while replacing a non-standard part, or while renaming the expressions of an inserted part, are now reported in the Report view.
 
 **1.0** (October 2026): first public release.
 

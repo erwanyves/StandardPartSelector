@@ -6,7 +6,7 @@ Macro: StandardPartSelector
 Sélecteur universel de composants standardisés pour FreeCAD.
 """
 
-__version__ = "1.0"
+__version__ = "1.1"
 import FreeCAD as App
 import sys, os, json
 
@@ -49,7 +49,8 @@ except OSError:
     print("[SPS] AVERT : dossier des modules illisible, purge partielle")
     _SPS_MODULES = ('config', 'catalog', 'geometry', 'sc_props', 'manifest',
                     'insertion', 'sync', 'update', 'ui_selector',
-                    'integration', 'i18n', 'category_labels')
+                    'integration', 'i18n', 'category_labels',
+                    'documents', 'transaction')
 for _m in _SPS_MODULES:
     sys.modules.pop(_m, None)
 
@@ -73,6 +74,7 @@ from update    import (_scan_sc_components, _show_update_dialog,
                        _apply_bulk_update)
 from ui_selector  import select_component, _save_last_selection
 from integration  import open_integration_wizard, _detect_non_sc_body
+import transaction
 
 def main():
     # Détecter si un Body hors-standard est sélectionné
@@ -206,12 +208,19 @@ def main():
             geo_info, replace_mode, sync_done = result
         _dbg(f'[main] ref={ref!r} replace_mode={replace_mode} '
               f'preselect_obj={bool((preselect or {}).get("obj"))}')
+        # Une transaction par geste (04/11/2026, comme ORing, SpringFull et
+        # Swaging) : un seul Ctrl+Z défait l'insertion — fenêtre d'orientation
+        # comprise — ou le remplacement ; un échec n'en laisse rien.
+        _remplacement = bool(replace_mode and preselect and preselect.get('obj'))
+        transaction.ouvrir(_t('transaction_replace') if _remplacement
+                           else _t('transaction_insert'))
         try:
             if replace_mode and preselect and preselect.get('obj'):
                 # ── Mode remplacement ─────────────────────────────────────
                 old_obj = preselect['obj']
                 _replace_component(old_obj, comp_key, family, variant,
                                    ref, params, cfg, QtWidgets2)
+                transaction.fermer()           # validé : la suite n'écrit plus dans le document
                 _save_last_selection(comp_key, family, variant, ref)
                 _msg_ok = _t('success_msg', ref=ref)
                 print(_msg_ok)
@@ -232,6 +241,7 @@ def main():
                 _status(_msg_ok)
                 insert_another = _show_orientation_dialog(
                     root, geo_info, QtWidgets2, QtCore2)
+                transaction.fermer()           # validée : la suite n'écrit plus dans le document
                 _dbg(f'[main] insert_another={insert_another}')
                 if not insert_another:
                     if not sync_done:
@@ -240,10 +250,13 @@ def main():
                     _dbg('[main] break: insertion OK')
                     break
         except Exception as e:
+            transaction.fermer(abandon=True)   # AVANT la boîte : ce qu'elle annonce doit être vrai
             import traceback
             _dbg(f'[main] EXCEPTION: {e}')
             print(traceback.format_exc())
             QtWidgets.QMessageBox.critical(None, _t("error_generation"), str(e))
+        finally:
+            transaction.fermer(abandon=True)   # sans effet après validation ; sinon le geste n'a pas abouti
 
 
 try:

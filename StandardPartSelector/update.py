@@ -17,6 +17,7 @@ modèle change, le composant doit être recréé, quelle que soit l'évolution
 des valeurs.
 """
 from config   import _t, _dbg
+import transaction
 from catalog  import load_catalog
 from sc_props import (_find_varset_in_object, _update_sc_varset,
                       diff_sc_data_properties, apply_sc_data_properties)
@@ -352,39 +353,48 @@ def _apply_bulk_update(to_update, QtWidgets):
     results_ok  = []   # [(label, ref, nb_params)]
     results_err = []   # [(label, erreur)]
 
-    for r in to_update:
-        obj     = r['obj']
-        ref     = r['ref']
-        catalog = r['catalog']
-        vcfg    = r.get('vcfg', {})
-        varset  = r['varset']
+    # Une seule transaction pour tout le lot (04/11/2026) : un Ctrl+Z
+    # défait la mise à jour entière. Un échec PAR COMPOSANT reste consigné
+    # dans le bilan et n'annule pas les autres, comme avant ; seule une
+    # exception imprévue abandonne. Validée AVANT le bilan.
+    transaction.ouvrir(_t('transaction_update'))
+    try:
+        for r in to_update:
+            obj     = r['obj']
+            ref     = r['ref']
+            catalog = r['catalog']
+            vcfg    = r.get('vcfg', {})
+            varset  = r['varset']
 
-        if varset is None:
-            results_err.append((obj.Label, _t('no_varset_found')))
-            continue
+            if varset is None:
+                results_err.append((obj.Label, _t('no_varset_found')))
+                continue
 
-        params = catalog.get(ref, {})
-        excl   = set(vcfg.get('excluded_keys', []))
-        # Recaler la version du composant sur celle du modèle (et non sur now())
-        # pour qu'une future modification réelle du FCStd reste détectable.
-        new_ts = r.get('ts_src') or r.get('ts_obj') \
-                 or _dt.now().strftime('%Y%m%d-%H%M%S')
-        try:
-            _update_sc_varset(obj, varset, params, new_ts, excl, QtWidgets,
-                              silent=True)
-            # Rafraîchir les propriétés SC_ de données (Prix, Fournisseur…)
-            apply_sc_data_properties(obj, params, r.get('data_props', {}))
-            nb = len([k for k in params
-                      if k not in excl
-                      and k in (varset.PropertiesList or [])])
-            results_ok.append((obj.Label, ref, nb))
-            _dbg(f'[update] {obj.Label} → {ref} ✓')
-        except Exception as e:
-            results_err.append((obj.Label, str(e)))
-            _dbg(f'[update] {obj.Label}: {e}')
+            params = catalog.get(ref, {})
+            excl   = set(vcfg.get('excluded_keys', []))
+            # Recaler la version du composant sur celle du modèle (et non sur now())
+            # pour qu'une future modification réelle du FCStd reste détectable.
+            new_ts = r.get('ts_src') or r.get('ts_obj') \
+                     or _dt.now().strftime('%Y%m%d-%H%M%S')
+            try:
+                _update_sc_varset(obj, varset, params, new_ts, excl, QtWidgets,
+                                  silent=True)
+                # Rafraîchir les propriétés SC_ de données (Prix, Fournisseur…)
+                apply_sc_data_properties(obj, params, r.get('data_props', {}))
+                nb = len([k for k in params
+                          if k not in excl
+                          and k in (varset.PropertiesList or [])])
+                results_ok.append((obj.Label, ref, nb))
+                _dbg(f'[update] {obj.Label} → {ref} ✓')
+            except Exception as e:
+                results_err.append((obj.Label, str(e)))
+                _dbg(f'[update] {obj.Label}: {e}')
 
-    if doc:
-        doc.recompute()
+        if doc:
+            doc.recompute()
+        transaction.fermer()
+    finally:
+        transaction.fermer(abandon=True)
 
     # Bilan
     lines = []

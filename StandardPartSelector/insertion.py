@@ -48,6 +48,19 @@ def generate_component(comp_key, family, variant, ref, params, cfg,
                         comp_key=comp_key, family=family, variant=variant,
                         ref=ref, geo_info=geo_info,
                         data_props=data_props)                               # 5A.1
+
+    # ── ÉPREUVE DE L'ABANDON — inerte par défaut (04/11/2026) ────────────
+    # Même dispositif que ORING_ESSAI_ECHEC et SPRINGFULL_ESSAI_ECHEC. Pour
+    # l'essai, dans la console Python de FreeCAD, avant de lancer la macro :
+    #     import os; os.environ['SPS_ESSAI_ECHEC'] = '1'
+    # L'échec est provoqué APRÈS la copie du composant dans le document et
+    # AVANT son placement : l'abandon de transaction doit l'en retirer.
+    # `pop` et non `get` : le point d'essai se désarme en se déclenchant.
+    if os.environ.pop('SPS_ESSAI_ECHEC', None):
+        raise RuntimeError(
+            "SPS_ESSAI_ECHEC — échec provoqué après l'insertion du composant "
+            "et avant son placement. Si vous lisez ceci sans l'avoir demandé, "
+            "retirez la variable d'environnement.")
     return root
 
 
