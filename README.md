@@ -36,7 +36,7 @@ The macro also:
 - synchronises an optional external library with the local one
 - makes every operation a single undo step: an insertion (orientation adjustments included), a replacement, an update. A failed insertion or replacement leaves nothing in the document
 
-**Library included in this repository:**
+**Library included in this repository (as examples):**
 
 | Family | Content |
 |---|---|
