@@ -4,7 +4,7 @@
 [![FreeCAD](https://img.shields.io/badge/FreeCAD-1.0%2B-orange.svg)](https://www.freecad.org)
 [![Version](https://img.shields.io/badge/version-1.1-green.svg)](#version-history)
 
-Insert, replace and manage parametric standard parts (bearings, circlips, profiles, magnets…) in FreeCAD from catalogues you can extend yourself.
+Insert, replace and manage parametric standard parts (bearings, circlips, profiles, magnets…) in FreeCAD from catalogues you can create or extend yourself.
 
 **Author:** Yves Guillou · **Version:** 1.1 · **License:** LGPL v2.1
 
